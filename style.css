@@ -1,0 +1,22 @@
+h3 {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+p {
+  padding-top: 15px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+footer li {
+  padding-top: 20px;
+  }
+}
+
+footer {
+  padding: 10px;
+}

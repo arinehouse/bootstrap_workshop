@@ -2,42 +2,54 @@
 <html>
 <head>
   <title>CS Survival Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <nav>
-    <div>
-      <div>
-        <a href="#">CS Survival Guide</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">CS Survival Guide</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toggle-1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Favorite Classes</a></li>
-        <li><a href="#">Top Languages</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="toggle-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Favorite Classes</a></li>
+          <li><a href="#">Top Languages</a></li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li class="navbar-right"><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
+          <li class="navbar-right"><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="page_header">
-    <div>
-      <h1>Dartmouth CS Survival Guide</h1>
-      <p>Welcome to the homepage of the Dartmouth CS Survival Guide – your home
+  <div class="container">
+    <div class="jumbotron">
+      <div>
+        <h1>Dartmouth CS Survival Guide</h1>
+        <p>Welcome to the homepage of the Dartmouth CS Survival Guide - your home
         for helpful tips, tricks, and stories to help you get through your time
         as a CS major.</p>
-      </div>
+        </div>
     </div>
+  </div>
 
-    <div class="grid_layout">
+    <div class="container-fluid">
       <h2>Top 6 Common CS Mistakes to Avoid</h2>
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-md-5">
           <h3>#1: Segmentation Faults (Core Dumped)</h3>
         </div>
-        <div>
+        <div class="col-md-7">
           <p>
             As anyone who has programmed in C knows, working with a language
             that is not memory safe can be a blessing and a curse.  One
@@ -48,11 +60,8 @@
           </p>
         </div>
       </div>
-      <div>
-        <div>
-          <h3>#2: Procrastination</h3>
-        </div>
-        <div>
+      <div class="row">
+        <div class="col-md-9">
           <p>
             The only possible thing that makes a CS lab harder is when its
             due at midnight and it’s 10pm.  Being a CS major and procrastinating
@@ -61,12 +70,15 @@
             they are due is definitely not a good idea.
           </p>
         </div>
+        <div class="col-md-3">
+          <h3>#2: Procrastination</h3>
+        </div>
       </div>
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-md-3">
           <h3>#3: Not Using Git</h3>
         </div>
-        <div>
+        <div class="col-md-9">
           <p>
             As a student, especially if no one else is working on your code,
             using Git can seem tedious and unneccessary.  Why learn this complicated
@@ -77,11 +89,8 @@
           </p>
         </div>
       </div>
-      <div>
-        <div>
-          <h3>#4: Getting Cooked</h3>
-        </div>
-        <div>
+      <div class="row">
+        <div class="col-md-9">
           <p>
             Ever tried taking two systems level programming courses in the same
             term?  Or how about saving an entire CS50 lab until the last minute?
@@ -92,12 +101,15 @@
             cooked at all costs.
           </p>
         </div>
+        <div class="col-md-3">
+          <h3>#4: Getting Cooked</h3>
+        </div>
       </div>
-      <div>
-        <div>
+      <div class="row">
+        <div class="col-md-4">
           <h3>#5: Forgetting How to Code</h3>
         </div>
-        <div>
+        <div class="col-md-8">
           <p>
             What's that you say?  How could a programmer possibly forget how to
             code?  Well you're right, they probably couldn't.  The problem is
@@ -108,13 +120,17 @@
       </div>
     </div>
 
-    <footer>
-      <ul>
-        <li><a href="#">ORC</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Major</a></li>
-        <li><a href="#">Professors</a></li>
-      </ul>
+    <footer class="nav navbar-inverse">
+      <div class="container-fluid">
+        <ul class="row list-unstyled">
+          <li class="col-md-9"><a href="#">ORC</a></li>
+          <li class="col-md-1"><a href="#">Schedule</a></li>
+          <li class="col-md-1"><a href="#">Major</a></li>
+          <li class="col-md-1"><a href="#">Professors</a></li>
+        </ul>
+      </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
   </html>
